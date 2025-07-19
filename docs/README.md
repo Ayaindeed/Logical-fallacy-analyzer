@@ -38,7 +38,6 @@ An AI-powered tool that analyzes news articles for logical fallacies, built with
 
 
 ## Supported Fallacies
-
 - Ad Hominem, Appeal to Emotion, False Dilemma
 - Hasty Generalization, False Causality
 - Slippery Slope, Appeal to Authority
