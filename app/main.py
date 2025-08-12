@@ -31,7 +31,7 @@ class FallacyAnalyzer:
     def load_fallacies(self) -> Optional[pd.DataFrame]:
         """Load fallacies data"""
         try:
-            self.fallacies_df = pd.read_csv('../data/fallacies.csv')
+            self.fallacies_df = pd.read_csv(os.path.join(os.path.dirname(__file__), '..', 'data', 'fallacies.csv'))
             return self.fallacies_df
         except FileNotFoundError:
             st.error("fallacies.csv not found!!")
@@ -785,3 +785,6 @@ def batch_analysis_interface(analyzer):
 
 if __name__ == "__main__":
     main()
+
+print("Current working directory:", os.getcwd())
+print("Attempting to load:", os.path.abspath('../data/fallacies.csv'))
